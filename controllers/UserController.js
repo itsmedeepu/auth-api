@@ -70,4 +70,7 @@ const Posts = async (req, res) => {
   res.status(200).json({ message: "post request" });
 };
 
+const getAllData = async (req, res) => {
+  res.status(200).json({ message: "get data" });
+};
 module.exports = { Register, Login, Dashboard, Posts };

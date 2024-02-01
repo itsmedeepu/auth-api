@@ -23,7 +23,9 @@ const RefreshToken = async (req, res) => {
       });
     });
   } catch (err) {
-    res.status(500).json({ message: "something went bad at server" });
+    res
+      .status(500)
+      .json({ message: "something went bad at server", data: null });
   }
 };
 
